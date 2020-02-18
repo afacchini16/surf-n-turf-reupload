@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Surf or Hike?</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body id="splashBody">
+    <!--needed for google maps api?-->
+    <div id="map" class="hidden"></div>
+
+    <div id="title-image-div">
+        <img id="hike-title-image" src="assets/images/hikeIndex.png" alt="HIKE">
+        <img id="surf-title-image" src="https://static.pexels.com/photos/35007/pexels-photo.jpg" alt="SURF">
+    </div>
+
+    <h1 id="surf-title"><a id="surf-link" href="surf.html">SURF </a></h1>
+    <h1 id="hike-title"><a id="hike-link" href="hike.html">HIKE</a></h1>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+    <!-- Google Locations API-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwybo5XEokSVDqS_jmsKMpOshEhVCHUVA&libraries=places"></script>
+    <!--Local JS-->
+    <script src="assets/javascript/hike.js" type="text/javascript"></script>
+    <script src="assets/javascript/fireDB.js" type="text/javascript"></script>
+    <script src="assets/javascript/events.js" type="text/javascript"></script>
+</body>
+
+</html>

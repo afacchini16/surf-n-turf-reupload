@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Surf App </title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/surf.css">
+	<script src="https://momentjs.com/downloads/moment.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
+	<link rel="stylesheet" href="assets/css/jquery-ui.theme.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="assets/javascript/jquery-ui.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="">
+	<link rel="stylesheet" type="text/css" href="assets/css/surf.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+		crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+	<!-- Full Page Image Background Carousel Header -->
+	<header id="myCarousel" class="carousel slide">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+			<li data-target="#myCarousel" data-slide-to="3"></li>
+		</ol>
+
+		<!-- Wrapper for Slides -->
+		<div class="carousel-inner">
+			<div class="item active">
+				<!--Set the first background image using inline CSS below. -->
+				<div class="fill" id="img1" style="background-image:url('http://i.cdn-surfline.com/surfnews/images/2011/09_september/spotcheck_blacks/full/04.jpg');"></div>
+			</div>
+
+			<div class="item">
+				<!--Set the second background image using inline CSS below. -->
+				<div class="fill" id="img2" style="background-image:url('http://a2.espncdn.com/photo/2014/0130/as_surf_blacks_beefsqueege_2048.jpg');"></div>
+			</div>
+
+			<div class="item">
+				<!-- Set the third background image using inline CSS below. -->
+				<div class="fill" id="img3" style="background-image:url('https://cdn.shopify.com/s/files/1/0972/4294/files/51.jpg?7832140550121852118');"></div>
+			</div>
+
+			<div class="item">
+				<div class="fill" id="img4" style="background-image:url('http://cdn1.theinertia.com/wp-content/gallery/stephen-morissette/morissette_01.jpg');"></div>
+			</div>
+
+		</div>
+		</div>
+		<div class="content Wrapper">
+			<div class="favoritesWrapper">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="favoritesHeader">
+							<i class="glyphicon glyphicon-align-justify"></i>
+							<i class="glyphicon glyphicon-heart" id="heartSurf"></i>
+							<h3 id="heartCount">0 </h3>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="favoritesContentArea" id="favSurfList">
+							<img src="https://cdn3.iconfinder.com/data/icons/water-sports-and-recreation-tours/512/Water_sports_and_recreation_tours_Surfing-512.png"
+								height="25px" width="25px"> Spot Name
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="display">
+					<div class="col-sm-3">
+						<div class="searchWrapper">
+							<div id="emptyField"> *Invalid Answer </div>
+							<i class="glyphicon glyphicon-search"></i> <input type="text" id="searchText" class="ui-autocomplete">
+							<button type="button" id="submitBtn" class="btn btn-default">Submit</button>
+						</div>
+						<div class="infoBar">
+							<div class="spotName">
+							</div>
+							<div class="row">
+								<div class="detailsWrapper">
+									<div class="col-sm-3">
+										<div class="waterTemp">
+											<img src="http://icongal.com/gallery/image/6062/water_temperature_temperature.png" height="40px" width="40px">
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="wind">
+											<img src="https://image.flaticon.com/icons/svg/56/56086.svg" height="50px" width="50px">
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="surfHeight">
+											<h3>Surf Height: </h3>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="rating">
+										</div>
+										<div id="poorFairGood">
+										</div>
+									</div>
+								</div>
+							</div>
+							<canvas id="myChart" width="300px" height="300px" style=""></canvas>
+
+							<i class="glyphicon glyphicon-menu-down"> </i>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3"></div>
+				<div class="col-sm-3">
+				</div>
+			</div>
+		</div>
+		<div class="modal"></div>
+	</header>
+	<!-- <div class = "display">
+    		<div class = "ui-autocomplete">
+    			<label for = "tags">Tags: </label>
+    			<input id = "tags">
+    		</div>
+    	</div> -->
+
+	<!-- container used by FlexView API -->
+	<!-- <div class="oax-top-cont"></div> -->
+	<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+	<script type="text/javascript" src="assets/javascript/surf.js"></script>
+	<script>
+		$('.carousel').carousel({
+			interval: 5000 //changes the speed
+		})
+	</script>
+	<!--<script src="assets/javascript/main.js" type="text/javascript"></script>-->
+	<script src="assets/javascript/fireDB001.js" type="text/javascript"></script>
+
+</body>
+
+</html>
