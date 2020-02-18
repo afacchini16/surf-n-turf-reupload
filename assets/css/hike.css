@@ -1,0 +1,155 @@
+.ui-autocomplete-input{
+    border-radius: 0;
+    list-style:none;
+    border:solid 1px black;
+    padding:10px;
+    opacity:0.5;
+    font-weight:bolder;
+    border-radius:6px;
+    transition:0s 10s;
+    width:35px;
+    height:30px;
+    transition: width 3s;
+    transition-timing-function:ease-in-out;
+    /*transition-delay:0.5s;*/
+	margin-left:-25px
+}
+.glyphicon.glyphicon-search{
+	top:5px;
+	right:-5px
+}
+.ui-menu{
+	list-style:none;
+	padding:0;
+	opacity:0.5;
+	font-size:150%;
+	font-weight:bold;
+	width:100px;
+	border-radius:4px;
+}
+#submitBtn{
+	opacity:0.7;
+	font-weight:bold;
+}
+.favoritesHeader{
+	border:solid 2px black;
+}
+.favoritesHeader i{
+	margin:10px 0 10px 15px;
+}
+.favoritesHeaderText{
+	font-size:125%;
+	float:right;
+	margin: 10px 10px 0 0;
+}
+.favoritesContentArea{
+	border:solid 2px black;
+	height:150px;
+	font-size:150%;
+}
+.favoritesWrapper{
+	margin:15px;
+	padding: 10px 0 0 10px;
+}
+.ui-widget-content .ui-state-focus
+{   background: blue;
+    border: 1px solid red;
+}
+.ui-helper-hidden-accessible{
+	display:none;
+}
+input{
+	/*opacity:0;*/
+	transition: width 3s;
+	bottom:10px;
+}
+.clicked{
+	width:200px;
+	margin: 22px 0 0 18px;
+}
+.inputDisappear{
+	width:10px;
+	transition:width 3s;
+	transition-timing-function: ease-in-out;
+	-webkit-transition: width 3s;
+	margin: 22px 0 0 18px;
+
+}
+body{
+	background-image:url("../images/surf.jpg");
+	width:1100px;
+	/*position:relative;*/
+}
+i{
+	font-size:150%;
+	margin:20px 0 0 10px;
+	/*padding:10px;*/
+	color:white;
+}
+i:hover{
+	/*background-color:red;*/
+}
+i:hover + input {
+	/*opacity:0.5 !important;
+	transition:0s;
+	transition-timing-function:ease-in-out;*/
+	-webkit-transition-timing-function: ease-in-out;
+	width:200px;
+}
+i:hover + .ui-autocomplete{
+	/*opacity:0.5 !important;
+	transition:0s;*/
+	transition-timing-function:ease-in-out;
+	-webkit-transition-timing-function: ease-in-out;
+	width:200px;
+}
+.display{
+	position:relative;
+}
+h1 .infoBar{
+	margin-top:0;
+	padding-top:0;
+}
+.infoBar{
+	position:absolute;
+	padding:0 10px 10px 10px;
+	border:solid 2px black;
+	left:50px;
+	top:225px;
+	margin:20px;
+	width:325px;
+}
+.spotName{
+	margin-top:0px;
+	border-bottom: solid 2px black;
+	font-size:250%
+}
+.detailsWrapper{
+	font-size:125%;
+	font-weight:bold;
+}
+.detailsWrapper .col-sm-3{
+	padding-right:5px;
+}
+.searchWrapper{
+	position:absolute;
+	bottom:225px;
+	right:35px;
+	border:solid 2px black;
+	padding-bottom:20px;
+	width:325px;
+	height:75px;
+}
+button{
+	position:absolute;
+	right:5px;
+	top:24px;
+}
+#myChart{
+	width:400px !important;
+	height:400px !important;
+	float:right;
+	right:0px;
+	top:0px;
+	
+}

@@ -1,0 +1,271 @@
+/** ONLY WRITE STYLES IN THE SCSS FILE. NOT CSS
+ *
+ * Install SASS: http://sass-lang.com/install
+ * Sass guide: http://sass-lang.com/guide
+ * 
+ * Once Sass is installed navigate to assets/css and run "sass --watch ."
+ * this will automatically generate the code in style.css whenever you save the code you've
+ * added to style.scss.
+*/
+html,
+body {
+  height: 100%; }
+
+body {
+  background: url(http://i.imgur.com/1st1PiA.gif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden; }
+
+.carousel,
+.item,
+.active {
+  height: 100%; }
+
+.carousel-inner {
+  height: 100%; }
+
+/* Background images are set within the HTML using inline CSS, not here */
+.fill {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+
+h3#spot-name {
+  color: white;
+  opacity: 1; }
+
+div#icon-spot.row {
+  margin-left: 10px; }
+
+div#content-box.container {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  height: auto;
+  width: 450px;
+  border-radius: 10px;
+  background-color: black;
+  opacity: 0.6;
+  box-shadow: 0 0 10px 5px black; }
+
+body#splashBody {
+  background-image: url("https://fast-company-res.cloudinary.com/image/upload/fc/3039266-poster-p-1-your-windowless-cubicle-is-doing-horrible-things-for-your-sleep-and-mental-health.jpg"); }
+
+h1#surf-title {
+  color: white;
+  font-size: 150px;
+  font-weight: 800;
+  text-shadow: -5px 0px 0px #00B2A1;
+  position: fixed;
+  top: 40%;
+  left: 20%; }
+
+h1#hike-title {
+  text-shadow: -7px 0px 0px #824021;
+  color: white;
+  font-size: 150px;
+  font-weight: 800;
+  position: fixed;
+  top: 40%;
+  left: 55%; }
+
+img#hike-title-image,
+img#surf-title-image {
+  display: none;
+  width: 100%;
+  height: 100%; }
+
+div.title-container {
+  margin-top: 350px; }
+
+img#search-icon {
+  float: left;
+  max-height: 20px;
+  max-width: 20px;
+  opacity: 1;
+  margin-top: 17px; }
+
+img.icon {
+  max-height: 50px;
+  max-width: 50px;
+  opacity: 1; }
+
+img#location-icon {
+  max-height: 30px;
+  max-width: 30px;
+  padding-top: 5px;
+  margin-top: 10px; }
+
+img#current-weather.icon {
+  margin-left: auto;
+  margin-right: auto; }
+
+div#name-spot {
+  display: block;
+  width: 370px; }
+
+h3#temp-info {
+  margin-top: 10px;
+  margin-left: 10px;
+  color: white; }
+
+h3#weather-info {
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 3px; }
+
+h3#wind-info {
+  color: white;
+  margin-top: 10px;
+  margin-left: -10px;
+  margin-bottom: 20px; }
+
+h3#rating-info {
+  color: white;
+  margin-top: 10px;
+  margin-left: 9px;
+  margin-bottom: 20px; }
+
+h3#spot-name {
+  font-size: 150%;
+  margin-bottom: 5%;
+  color: white; }
+
+h3#spot-name:hover {
+  font-size: 150%;
+  margin-bottom: 5%;
+  text-decoration: none;
+  color: white; }
+
+h3#heartCount {
+  position: fixed;
+  top: 20px;
+  left: 140px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000; }
+
+button#newPlace {
+  margin-left: 25%;
+  margin-right: 33%;
+  margin-bottom: 10px;
+  font-size: 20pt;
+  background-color: transparent;
+  border-color: transparent;
+  width: 200px;
+  color: grey;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.71); }
+
+button#newPlace:hover {
+  color: white;
+  transition-duration: .5s; }
+
+div#favoritesWrapper {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  height: 300px;
+  width: 400px;
+  border-radius: 10px;
+  background-color: black;
+  opacity: 0.6;
+  box-shadow: 0 0 10px 5px black; }
+
+div.favoritesHeaderText {
+  margin-left: -30px; }
+
+div#favHikeList {
+  overflow: auto;
+  height: 240px;
+  padding-left: 10px;
+  font-size: 20px; }
+
+i {
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 250%; }
+
+i.glyphicon-heart:hover {
+  color: red;
+  transition-duration: .5s;
+  cursor: pointer; }
+
+i.glyphicon-align-justify:hover {
+  color: white;
+  transition-duration: .5s;
+  cursor: pointer; }
+
+i.glyphicon-align-justify {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  color: #c0bfbf;
+  text-shadow: 2px 2px 4px #000000; }
+
+i.glyphicon-heart {
+  position: fixed;
+  top: 20px;
+  left: 75px; }
+
+.heartColor {
+  color: red; }
+
+a {
+  color: whitesmoke;
+  text-decoration: none; }
+
+body a:hover {
+  color: lightgrey;
+  text-decoration: none; }
+
+a:visited {
+  color: white;
+  text-decoration: none; }
+
+a#hike-link {
+  color: white; }
+
+#search-box-spot {
+  display: none;
+  max-width: 370px;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+input[type="text"] {
+  font-size: 25px; }
+
+.loading-gif {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url(http://i.imgur.com/1st1PiA.gif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden; }
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+  overflow: hidden; }
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+  display: block; }
+
+/*# sourceMappingURL=style.css.map */

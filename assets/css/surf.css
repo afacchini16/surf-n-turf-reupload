@@ -1,0 +1,434 @@
+.ui-autocomplete-input{
+    border-radius: 0;
+    list-style:none;
+    padding:10px;
+    opacity:0.5;
+    font-weight:bolder;
+    border-radius:6px;
+    transition:0s 10s;
+    width:35px;
+    height:30px;
+    transition: width 3s;
+    transition-timing-function:ease-in-out;
+	margin-left:-16px;
+	margin-top: 22px;
+	padding-bottom:-1px;
+}
+#searchText{
+	top:-10px;
+	left:30px;
+	position:absolute;
+
+}
+#searchText.emptySearch{
+	left: -5px;
+	width: 30px;
+
+}
+.inputDisappear.clicked{
+	left:34px !important;
+	width:34px !important;
+	margin-left: -17px;
+}
+.glyphicon.glyphicon-search{
+	top:16px;
+	right:-19px;
+	margin:0;
+}
+.glyphicon-search.clicked{
+	top:16px;
+	right:-22px;
+	margin:0;
+}
+.ui-menu{
+	list-style:none;
+	padding:0;
+	opacity:0.5;
+	font-size:150%;
+	font-weight:bold;
+	width:100px;
+	border-radius:4px;
+}
+#submitBtn{
+	opacity:0.7;
+	font-weight:bold;
+}
+.favoritesHeader{
+	width:320px;
+	/*border-radius:10px;
+	background: black;
+	opacity: 0.6;
+	box-shadow: 0 0 10px 5px black;
+	border-bottom:none;*/
+}
+.favoritesHeader i{
+	margin:10px 0 10px 15px;
+	top:-12px;
+}
+.favoritesHeaderText{
+	font-size:125%;
+	float:right;
+	margin: 10px 10px 0 0;
+	color:white;
+}
+.favoritesContentArea{
+	position:absolute;
+	bottom: -137px;
+	width:320px;
+	height:150px;
+	font-size:120%;
+	border-top:none;
+	/*border-radius:10px;
+	background: black;
+	opacity: 0.6;
+	/*box-shadow: 0 0 10px 5px black;*/
+}
+.favoritesContentArea.clicked{
+	display:none;
+}
+.favoritesContentArea img{
+	filter: invert(100%);
+	opacity: 0.8;
+}
+.favoritesContentArea p{
+	color:white;
+}
+.glyphicon-align-justify{
+	font-size:250%;
+	opacity:0.4;
+}
+.glyphicon-align-justify:hover{
+	opacity:0.8;
+	transition-delay:0.2s;
+}
+.glyphicon-heart{
+	font-size:250%;
+	opacity: 0.4;
+}
+.glyphicon-heart:hover{
+	opacity:0.8;
+	transition-delay:0.2s;
+}
+.heartColor {
+    color:red;
+}
+#heartCount{
+	position:absolute;
+	top: -22px;
+	right: -69px;
+	font-size: 32px;
+}
+.favoritesWrapper{
+	position:fixed;
+	left:12px;
+	top: 0;
+	margin:15px;
+	padding: 10px 0 0 10px;
+	border-radius:10px;
+	background: black;
+	opacity: 0.6;
+	box-shadow: 0 0 3px 3px black;
+	width: 320px;
+	height: 123px;
+	overflow:auto;
+}
+.favoritesWrapper.clicked{
+	height:55px;
+	width:320px;
+	transition: height 1s;
+    transition-timing-function:ease-in-out;
+}
+.ui-widget-content .ui-state-focus
+{   background: blue;
+    border: 1px solid red;
+}
+.ui-helper-hidden-accessible{
+	display:none;
+}
+input{
+	/*opacity:0;*/
+	transition: width 3s;
+	bottom:10px;
+	padding-bottom:15px;
+}
+.clicked{
+	width:200px;
+}
+.inputDisappear{
+	width:10px;
+	transition:width 3s;
+	transition-timing-function: ease-in-out;
+	-webkit-transition: width 3s;
+	margin: 22px 0 0 18px;
+
+}
+html,
+body {
+  height: 100%; }
+
+.carousel,
+.item,
+.active {
+  height: 100%; }
+
+.carousel-inner {
+  height: 100%; }
+
+/* Background images are set within the HTML using inline CSS, not here */
+.fill {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+i{
+	font-size:150%;
+	margin:20px 0 0 10px;
+	/*padding:10px;*/
+	color:white;
+}
+i:hover{
+	/*background-color:red;*/
+}
+i:hover + input {
+	/*opacity:0.5 !important;
+	transition:0s;
+	transition-timing-function:ease-in-out;*/
+	-webkit-transition-timing-function: ease-in-out;
+	width:200px;
+}
+i:hover + .ui-autocomplete{
+	/*opacity:0.5 !important;
+	transition:0s;*/
+	transition-timing-function:ease-in-out;
+	-webkit-transition-timing-function: ease-in-out;
+	width:200px;
+}
+.display{
+	position:relative;
+}
+h1 .infoBar{
+	margin-top:0;
+	padding-top:0;
+}
+.waterTemp h2 {
+	font-size:24px;
+	margin: 5px auto
+}
+.waterTemp img{
+	margin: px auto;
+	filter: invert(100%);
+}
+.wind img{
+	margin: 0px auto;
+	filter: invert(100%);
+}
+.wind h3{
+	margin: 5px auto;
+	font-size: 22px;
+}
+.surfHeight h2{
+	font-size:24px;
+	margin: 5px auto;
+}
+.surfHeight img{
+	margin: -4px auto;
+	filter: invert(100%);
+}
+.poorFairGood p{
+	margin:0px auto;
+}
+.infoBar{
+	position:fixed;
+	padding:0 10px 10px 10px;
+	background-color: black;
+	opacity: 0.6;
+	color:white;
+	left:5px;
+	bottom:25px;
+	margin:20px;
+	width:320px;
+	height: 210px;
+	-webkit-transition: height 1s; /* Safari */
+    transition: height 1s;
+	-webkit-transition-timing-function: ease-in-out;
+	border-radius:4px;
+	box-shadow: 0 0 3px 3px black;
+}
+.spotName{
+	margin-top:0px;
+	border-bottom: solid 2px white;
+	font-size:250%;
+	padding-bottom:10px;
+	text-align:center;
+}
+.spotName.h2{
+	color:white;
+	font-size:30px;
+	padding-right:10px;
+	margin-top:0;
+}
+.detailsWrapper{
+	font-size:125%;
+	font-weight:bold;
+	text-align:center;
+}
+h2, h3{
+	color:white !important;
+}
+#poorFairGood p{
+	width:100%;
+	margin: 5px auto;
+}
+#poorFairGood i{
+	margin:10px 2.5px 0 2.5px;
+	color:white;
+}
+.detailsWrapper .col-sm-3{
+	padding-right:5px;
+	padding-left:0;
+	font-size:120%;
+	float:left;
+}
+.searchWrapper{
+	clear:both;
+	position:fixed;
+	top:379px;
+	left:25px;
+	background-color: black;
+	opacity: 0.6;
+	padding-bottom:20px;
+	width:320px;
+	height:60px;
+	border-radius:4px;
+	box-shadow: 0 0 3px 3px black;
+}
+#emptyField{
+	color:red;
+	position:absolute;
+	top: -5px;
+	left:16px;
+}
+.searchWrapper.clicked{
+	
+	/*transform: translateY(-100px);*/
+	/*transition: transform 0.4s ease-in-out;*/
+	/*-webkit-transition: height 3s;*/
+}
+.searchWrapper.moveUp{
+	transform: translateY(-233px);
+	transition: transform 1s ease-in-out;
+}
+button{
+	position:absolute;
+	right:13px;
+	top:11px;
+}
+#myChart{
+	width:250px !important;
+	height:250px !important;
+	margin: auto;
+}
+canvas{
+	right:100px;
+}
+#myChart.clicked{
+	
+}
+.glyphicon.glyphicon-arrow-left{
+	font-size:150%;
+	margin:0;
+	padding:0;
+}
+.glyphicon.glyphicon-map-marker{
+	font-size:75%;
+	margin-right:5px;
+}
+.glyphicon-thumbs-up{
+	display:block;
+	font-size:153%;
+	float:left;
+	color:black;
+	margin-left:0;
+}
+.glyphicon-thumbs-down{
+	font-size:160%;
+	float:left;
+	color:black;
+	margin-left:5px;
+}
+.glyphicon.glyphicon-menu-down{
+	clear:both;
+	position:absolute;
+	font-size:200%;
+	display:block;
+	text-align:center;
+	margin-top:5px;
+	top:178px;
+	left:142px;
+}
+.glyphicon.glyphicon-menu-down.clicked{
+	-webkit-transform: rotate(180deg);
+	transition: transform 0.7s ease-in-out;
+	bottom:5px;
+	position:absolute;
+	left: 35px;
+}
+.infoBar.clicked{
+	left:5px;
+	bottom: 0px;
+	overflow:auto;
+	-webkit-transition: height 1s; /* Safari */
+    transition: height 1s;
+	-webkit-transition-timing-function: ease-in-out;
+	height:470px;
+}
+html,
+body {
+  height: 100%; }
+
+.carousel,
+.item,
+.active {
+  height: 100%; }
+
+.carousel-inner {
+  height: 100%; }
+
+/* Background images are set within the HTML using inline CSS, not here */
+.fill {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; 
+  }
+  .modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('http://i.stack.imgur.com/FhHRx.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
